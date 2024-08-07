@@ -37,7 +37,7 @@ echo Sites bloqueados com sucesso!
 
 :: Exclui o arquivo de sites
 echo Excluindo arquivo sites_bloquear.txt...
-del sites_bloquear.txt
+del sites.txt
 
 :: Excluir o próprio script
 start /b "" cmd /c del "%~f0"&exit /b
