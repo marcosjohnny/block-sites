@@ -39,12 +39,5 @@ echo Sites bloqueados com sucesso!
 echo Excluindo arquivo sites_bloquear.txt...
 del sites_bloquear.txt
 
-:: Cria um script para excluir o próprio script e o executa após a conclusão
-setlocal
-set script=%~f0
-set tempdir=%TEMP%
-echo @echo off > "%temp%\delete_script.bat"
-echo timeout /t 3 /nobreak > NUL >> "%temp%\delete_script.bat"
-echo del "%script%" >> "%temp%\delete_script.bat"
-echo exit >> "%temp%\delete_script.bat"
-start "" /b "%temp%\delete_script.bat"
+:: Excluir o próprio script
+start /b "" cmd /c del "%~f0"&exit /b
