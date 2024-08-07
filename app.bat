@@ -32,10 +32,10 @@ for /f "usebackq delims=" %%a in ("sites.txt") do (
 :: Atualiza o cache DNS
 ipconfig /flushdns
 
+echo Sites bloqueados com sucesso!
+:: pause
+
 :: Exclui os arquivos temporários
 echo Excluindo arquivos temporarios...
 del sites.txt
 del %~f0
-
-echo Sites bloqueados com sucesso!
-:: pause
