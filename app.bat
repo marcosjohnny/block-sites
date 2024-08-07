@@ -36,7 +36,7 @@ echo Sites bloqueados com sucesso!
 :: pause
 
 :: Exclui o arquivo de sites
-echo Excluindo arquivo sites_bloquear.txt...
+echo Excluindo arquivo sites.txt...
 del sites.txt
 
 :: Excluir o próprio script
