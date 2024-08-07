@@ -1,7 +1,12 @@
-:: Feito por Marcos Rodrigues
-:: https://github.com/marcosjohnny
-
 @echo off
+
+echo ============================================================
+echo
+echo Criado por: Marcos Rodrigues
+echo https://github.com/marcosjohnny
+echo
+echo ============================================================
+
 echo Bloqueando sites indesejados...
 
 :: Define o caminho para o arquivo hosts
