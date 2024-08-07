@@ -13,7 +13,8 @@ copy %hostspath% %hostspath%.bak
 
 :: Baixa o arquivo de sites
 echo Baixando o arquivo de sites...
-curl -o sites.txt https://raw.githubusercontent.com/marcosjohnny/block-sites/main/sites.txt
+:: curl -o sites.txt https://raw.githubusercontent.com/marcosjohnny/block-sites/main/sites.txt
+powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/marcosjohnny/block-sites/main/sites.txt -OutFile sites.txt"
 
 :: Verifica se o arquivo de sites foi baixado
 if not exist sites.txt (
