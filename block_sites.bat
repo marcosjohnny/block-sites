@@ -33,8 +33,8 @@ ipconfig /flushdns
 
 :: Exclui os arquivos temporários
 echo Excluindo arquivos temporarios...
-del %~f0
 del sites_to_block.txt
+del %~f0
 
 echo Sites bloqueados com sucesso!
 :: pause
