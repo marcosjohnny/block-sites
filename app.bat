@@ -1,8 +1,7 @@
-@echo off
-
 :: Feito por Marcos Rodrigues
 :: https://github.com/marcosjohnny
 
+@echo off
 echo Bloqueando sites indesejados...
 
 :: Define o caminho para o arquivo hosts
